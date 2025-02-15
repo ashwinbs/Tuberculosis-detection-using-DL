@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.0/css/mdb.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .card {
+            transform: translate(-50%);
+            margin-left: 50%;
+            margin-top: 15%;
+            width: 1100px;
+        }
+    </style>
+</head> -->
+{% extends 'user/userNavigation.html' %}
+{% block content %}
+{% load static %}
+
+
+<body style="background-image: url({% static "images/2.jpg" %});background-repeat: no-repeat;background-size: cover;">
+
+    <div class="container mt-2">
+        <div class="card hoverable p-4">
+            <span class="badge badge-info">
+                <h1>RESULT</h1>
+            </span>
+            <div class="card-body text-center">
+                <!-- <div class="col-md-6" style="margin-left: 43%;"> -->
+                    <h3 style="font-weight: bold;">{{result}}</h3>
+                <!-- </div> -->
+            </div><br><br>
+            <div class="card-body text-center">
+                <!-- <div class="col-md-6" style="margin-left: 43%;"> -->
+                    <img src="../../media/input.png" height="150" width="150"/>
+                <!-- </div> -->
+            </div><br><br>
+        </div>
+        <form>
+        <div class="row text-center">
+            <button class="btn btn-large btn-primary mt-5" formaction="/testagain/" 
+            style="font-size: large;">
+                Check another result</button>
+                
+                
+        </div>
+    </form>
+    </div>
+</body>
+
+{% endblock %}

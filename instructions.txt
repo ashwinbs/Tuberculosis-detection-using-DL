@@ -1,0 +1,17 @@
+Data set is not included.Please aadd the dataset to train the model
+First you need  to activate virtualenv 
+
+to activate :  virtualenv\Scripts\activate
+
+to run training script ex: python filename.py
+
+like a way need to run traning scripts python  filename these thre are training files
+
+to start django app or ui need to move to : cd tuberculosis
+
+to start django server py manage.py runserver
+
+then the local url will be generated, open that url in your browser
+after that use the application.
+make a sign iN and Sign Up and in upload page upload the image and preidt the result
+
